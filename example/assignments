@@ -1,0 +1,12 @@
+1. install terraform and az commands in local machine
+
+2. create main.tf and run terrform commands
+   terraform init
+   terraform plan -out terraform.plan
+    terraform apply "terraform.plan"  
+    terraform destroy --auto-approve
+
+3. create backend and use azure blob container as a remote backend.
+   ref:  https://developer.hashicorp.com/terraform/language/settings/backends/azurerm
+
+4. create Azure virtual machine using terraform
