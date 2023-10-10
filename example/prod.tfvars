@@ -1,1 +1,1 @@
-rgname=prodRG
+rgname = "prodRG"

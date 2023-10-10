@@ -1,1 +1,1 @@
-rgname=devRG
+rgname = "devRG"
