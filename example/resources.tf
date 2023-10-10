@@ -34,7 +34,8 @@ resource "azurerm_storage_table" "tf" {
 }
 
 resource "azurerm_storage_share" "example" {
-  name                 = var.filesharename
+  for_each = tomap(var.fileshare_list)
+  name                 = var.fileshare_list("name")
   storage_account_name = azurerm_storage_account.tf.name
-  quota                = 50
+  quota                = var.fileshare_list("quota")
   }

@@ -15,6 +15,9 @@ variable "queuename"{
 variable "tablename"{
   type = string
 }
-variable "filesharename"{
-  type = string
+variable "fileshare_list"{
+  type = map(object({
+    name = string
+    quota = number
+  }))
 }
