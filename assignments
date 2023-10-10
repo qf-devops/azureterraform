@@ -13,3 +13,7 @@
 4. create Azure storage account and blob container using terraform
 
 5.  create 3 resource groups for different environments  using tfvars
+
+6. create multiple blob container resources using count keyword 
+
+7. create queues with list  type.
