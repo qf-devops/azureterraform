@@ -11,3 +11,5 @@
    ref:  https://developer.hashicorp.com/terraform/language/settings/backends/azurerm
 
 4. create Azure storage account and blob container using terraform
+
+5.  create 3 resource groups for different environments  using tfvars
