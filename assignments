@@ -36,3 +36,4 @@
         "quota" = "20"
         }
         ]
+   ref:  https://stackoverflow.com/questions/74578117/terraform-variable-type-for-list-of-maps
