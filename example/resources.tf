@@ -23,7 +23,8 @@ resource "azurerm_storage_container" "tf" {
 }
 
 resource "azurerm_storage_queue" "tf" {
-  name                 = var.queuename
+  count = 5
+  name                 = "webqueue${count.index}"
   storage_account_name = azurerm_storage_account.tf.name
 }
 
