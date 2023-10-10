@@ -8,12 +8,12 @@ variable  "storageaccountname"{
 variable "containername"{
     type = string
 }
-variable queuename"{
+variable "queuename"{
   type = string
 }
-variable tablename"{
+variable "tablename"{
   type = string
 }
-variable filesharename"{
+variable "filesharename"{
   type = string
 }

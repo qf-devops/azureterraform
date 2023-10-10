@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "tf" {
   name     = var.rgname
   location = "westus2"
 }
@@ -36,4 +36,3 @@ resource "azurerm_storage_share" "example" {
   storage_account_name = azurerm_storage_account.tf.name
   quota                = 50
   }
-}
