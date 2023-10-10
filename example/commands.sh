@@ -1,10 +1,3 @@
-terraform init
-terraform plan -out terraform.plan
-terraform apply "terraform.plan"
-
-
-env:
-
 terraform init -backend-config="key=dev/terraform.tfstate" -reconfigure
 terraform plan -out=dev.plan -var-file=dev.tfvars
 terraform apply dev.plan
@@ -18,6 +11,3 @@ terraform apply stage.plan
 terraform init -backend-config="key=prod/terraform.tfstate" -reconfigure
 terraform plan -out=prod.plan -var-file=prod.tfvars
 terraform apply prod.plan
-
-
-
