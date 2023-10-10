@@ -16,7 +16,8 @@ resource "azurerm_storage_account" "tf" {
 }
 
 resource "azurerm_storage_container" "tf" {
-  name                  = var.containername
+  for_each = toset(var.container_list) 
+  name     = each.value
   storage_account_name  = azurerm_storage_account.tf.name
   container_access_type = "private"
 }

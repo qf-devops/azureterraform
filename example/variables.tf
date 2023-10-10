@@ -5,8 +5,9 @@ variable "rgname"{
 variable  "storageaccountname"{
     type = string
 }
-variable "containername"{
-    type = string
+variable "container_list"{
+    type = list(string)
+    
 }
 variable "queuename"{
   type = string
