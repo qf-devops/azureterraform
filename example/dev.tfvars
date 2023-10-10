@@ -1,1 +1,6 @@
 rgname = "devRG"
+storageaccountname = "devwebappstgaccnt10102023"
+containername = "webapp01"
+queuename = "webqueue"
+tablename = "webtable"
+filesharename = "webfileshare"

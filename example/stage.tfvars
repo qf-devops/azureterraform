@@ -1,1 +1,6 @@
 rgname  = "stageRG"
+storageaccountname = "stagewebappstgaccnt10102023"
+containername = "webapp01"
+queuename = "webqueue"
+tablename = "webtable"
+filesharename = "webfileshare"
