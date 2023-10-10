@@ -18,4 +18,21 @@
 
 7. create queues resources using count keyword
 
-8. queue ==> name and tag
+8. quse map and list to iterate multiple values
+    fileshare_list = [{
+        "name" = "webfileshare"
+        "quota" = "20"
+        },
+        {
+        "name" = "webfileshare"
+        "quota" = "20"
+        },
+       
+         {
+        "name" = "webfileshare"
+        "quota" = "20"
+        },{
+        "name" = "webfileshare"
+        "quota" = "20"
+        }
+        ]

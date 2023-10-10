@@ -5,7 +5,20 @@ tablename = "webtable"
 filesharename = "webfileshare"
 container_list = ["webapp01", "webapp02", "webapp03", "webapp04", "webapp05"]
 
-fileshare_list ={
+fileshare_list = [{
+        "name" = "webfileshare"
+        "quota" = "20"
+        },
+        {
+        "name" = "webfileshare"
+        "quota" = "20"
+        },
+       
+         {
+        "name" = "webfileshare"
+        "quota" = "20"
+        },{
         "name" = "webfileshare"
         "quota" = "20"
         }
+        ]
