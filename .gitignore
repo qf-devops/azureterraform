@@ -2,4 +2,6 @@
 **/terraform.plan
 **/terraform.tfstate
 **/terraform.tfstate.backup
-**/*.plan
+**/dev.plan
+**/stage.plan
+**/prod.plan
