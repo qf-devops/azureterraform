@@ -1,12 +1,7 @@
-resource "azurerm_resource_group" "tf" {
-  name     = var.rgname
-  location = "westus2"
-}
-
 resource "azurerm_storage_account" "tf" {
   name                     = var.storageaccountname
-  resource_group_name      = azurerm_resource_group.tf.name
-  location                 = azurerm_resource_group.tf.location
+  resource_group_name      = var.rgname
+  location                 = var.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 

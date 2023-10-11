@@ -1,8 +1,10 @@
 rgname = "devRG"
+location = "westus2"
 storageaccountname = "devwebappstgaccnt101023"
+storageaccountnamev1 = "devwebappstgaccnt111023"
+
 queuename = "webqueue"
 tablename = "webtable"
-filesharename = "webfileshare"
 container_list = {
  container1 = {
          "name" = "webapp01"
@@ -25,11 +27,6 @@ container5 = {
          "accesstype" = "blob"
          }
 }
-
-         
-
-         
-
 fileshare_list = {
   "fileshare1" = {
                   "name" = "webfileshare1"

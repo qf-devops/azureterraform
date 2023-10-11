@@ -1,6 +1,8 @@
 variable "rgname"{
     type = string
-    default = "devRG"
+}
+variable "location"{
+    type = string
 }
 variable  "storageaccountname"{
     type = string
