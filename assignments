@@ -18,7 +18,7 @@
 
 7. create queues resources using count keyword
 
-8. quse map and list to iterate multiple values
+8. use map and list to iterate multiple values
     fileshare_list = [{
         "name" = "webfileshare"
         "quota" = "20"
@@ -37,3 +37,28 @@
         }
         ]
    ref:  https://stackoverflow.com/questions/74578117/terraform-variable-type-for-list-of-maps
+
+9. create multiple containers with different accesstypes using map of map .
+data example: 
+container_list = {
+ container1 = {
+         "name" = "webapp01"
+         "accesstype" = "private"
+         },
+ container2 = {
+         "name" = "webapp02"
+         "accesstype" = "blob"
+         },
+container3 = {
+         "name" = "webapp03"
+         "accesstype" = "private"
+         },
+container4 = {
+         "name" = "webapp04"
+         "accesstype" = "private"
+         },
+container5 = {
+         "name" = "webapp05"
+         "accesstype" = "blob"
+         }
+}

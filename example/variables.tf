@@ -15,9 +15,12 @@ variable "queuename"{
 variable "tablename"{
   type = string
 }
-variable "fileshare_list"{
+
+variable "fileshare_list" {
   type = map(object({
-    name = string
-    quota = number
+    name           = string
+    quota          = number
   }))
+  description = "List of azure fileshares to create."
+  default     = {}
 }
