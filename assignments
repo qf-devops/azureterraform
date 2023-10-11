@@ -62,3 +62,7 @@ container5 = {
          "accesstype" = "blob"
          }
 }
+
+10. create a vm mentioned with below mentioned link:
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine
+ 
