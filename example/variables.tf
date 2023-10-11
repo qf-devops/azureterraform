@@ -5,9 +5,13 @@ variable "rgname"{
 variable  "storageaccountname"{
     type = string
 }
-variable "container_list"{
-    type = list(string)
-    
+variable "container_list" {
+  type = map(object({
+    name           = string
+    accesstype     = string
+  }))
+  description = "List of azure containers to create."
+  default     = {}
 }
 variable "queuename"{
   type = string
