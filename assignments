@@ -66,3 +66,6 @@ container5 = {
 10. create a vm mentioned with below mentioned link:
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine
  
+
+ 11. use modules for vms with paramerized
+ 12. create multipl vms with modules 
