@@ -3,10 +3,6 @@ resource "azurerm_resource_group" "rg" {
   name     = var.rgname
   location = var.location
 }
-resource "azurerm_resource_group" "rg1" {
-  name     = "stgerg"
-  location = var.location
-}
 # module "abc"{
 #   source = "./modules/storageaccount"
 #   rgname = var.rgname
@@ -17,9 +13,9 @@ resource "azurerm_resource_group" "rg1" {
 #   container_list = var.container_list
 #   fileshare_list = var.fileshare_list
 # }
-# module "computing1"{
-#   source = "./modules/computing"
-# }
+module "computing1"{
+  source = "./modules/computing"
+}
 
 # module "dev2"{
 #   source = "./modules/storageaccount"
