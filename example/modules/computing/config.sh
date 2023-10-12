@@ -1,13 +1,9 @@
-
-
-
 sudo apt update
-sudo apt install nginx
+sudo apt install nginx -y
 cd /var/www
 sudo mkdir tutorial
 cd tutorial
-sudo "${EDITOR:-vi}" index.html
-
+sudo cat > index.html << EOL
 <!doctype html>
 <html>
 <head>
@@ -19,10 +15,9 @@ sudo "${EDITOR:-vi}" index.html
     <p>We have just configured our Nginx web server on Ubuntu Server!</p>
 </body>
 </html>
-
+EOL
 cd /etc/nginx/sites-enabled
-sudo "${EDITOR:-vi}" tutorial
-
+sudo cat > tutorial << EOL
 server {
        listen 81;
        listen [::]:81;
@@ -36,5 +31,5 @@ server {
                try_files $uri $uri/ =404;
        }
 }
-
+EOL
 sudo service nginx restart
