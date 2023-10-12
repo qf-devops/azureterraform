@@ -87,5 +87,17 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
   https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine_extension
 
 14. how to add application insights to appservice
+    https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_insights
 
 15. enable db connection to appservice using connection_stering 
+
+  connection_string {
+    name  = "Database"
+    type  = "SQLAzure"
+    value = "Server=tcp:azurerm_sql_server.sqldb.fully_qualified_domain_name Database=azurerm_sql_database.db.name;User ID=azurerm_sql_server.sqldb.administrator_login;Password=azurerm_sql_server.sqldb.administrator_login_password;Trusted_Connection=False;Encrypt=True;"
+  }
+
+16. cosmosdb with webapp
+     https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service_connection
+
+17. create azure cntainer registry using terraform
