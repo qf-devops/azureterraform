@@ -39,7 +39,7 @@ resource "azurerm_virtual_machine" "main" {
   resource_group_name   = azurerm_resource_group.example.name
   network_interface_ids = [azurerm_network_interface.main.id]
   vm_size               = "Standard_DS1_v2"
-
+  custom_data           = base64encode(data.template_file.linux-vm-cloud-init.rendered)
   # Uncomment this line to delete the OS disk automatically when deleting the VM
   # delete_os_disk_on_termination = true
 
@@ -69,4 +69,8 @@ resource "azurerm_virtual_machine" "main" {
   tags = {
     environment = "staging"
   }
+}
+
+data "template_file" "linux-vm-cloud-init" {
+  template = file("config.sh")
 }
