@@ -57,6 +57,9 @@ resource "azurerm_linux_virtual_machine" "example" {
     sku       = "20_04-lts"
     version   = "latest"
   }
+   provisioner "local-exec" {
+    command = "echo hello >> private_ips.txt"
+  }
 }
 
 # Get a Static Public IP
@@ -156,4 +159,16 @@ SETTINGS
   tags = {
     environment = "dev"
   }
+}
+
+data "azurerm_virtual_machine" "example" {
+  name                = "example-machine"
+  resource_group_name = azurerm_resource_group.example.name
+}
+
+output "virtual_machine_id" {
+  value = data.azurerm_virtual_machine.example.id
+}
+output "virtual_machine_publicip" {
+  value = data.azurerm_virtual_machine.example.public_ip
 }
