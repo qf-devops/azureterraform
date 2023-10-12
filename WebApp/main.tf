@@ -31,7 +31,7 @@ resource "azurerm_app_service" "example" {
   }
 
   app_settings = {
-    "SOME_KEY" = "some-value"
+        "APPINSIGHTS_INSTRUMENTATIONKEY" = "${azurerm_application_insights.example.instrumentation_key}"
   }
 
   connection_string {
@@ -39,4 +39,11 @@ resource "azurerm_app_service" "example" {
     type  = "SQLServer"
     value = "Server=some-server.mydomain.com;Integrated Security=SSPI"
   }
+}
+
+resource "azurerm_application_insights" "example" {
+  name                = "tf-test-appinsights"
+  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example.name
+  application_type    = "web"
 }

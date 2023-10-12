@@ -169,6 +169,6 @@ data "azurerm_virtual_machine" "example" {
 output "virtual_machine_id" {
   value = data.azurerm_virtual_machine.example.id
 }
-output "virtual_machine_publicip" {
-  value = data.azurerm_virtual_machine.example.public_ip
+output "virtual_machine_prip" {
+  value = azurerm_network_interface.example.private_ip_address
 }
