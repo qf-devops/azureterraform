@@ -82,6 +82,6 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
 
 12. assign public Ip address to this vm.
 
-13. eloborate on virtual_machine_extension with existing linux vm.
+13. elaborate on virtual_machine_extension with existing linux vm.
 
   https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine_extension

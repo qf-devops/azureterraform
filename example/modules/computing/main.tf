@@ -138,3 +138,22 @@ resource "azurerm_subnet_network_security_group_association" "web-linux-vm-nsg-a
 data "template_file" "linux-vm-cloud-init" {
   template = file("/Users/ravi/azureterraform/example/modules/computing/azure-user-data.sh")
 }
+
+resource "azurerm_virtual_machine_extension" "example" {
+  name                 = "hostname"
+  virtual_machine_id   = azurerm_linux_virtual_machine.example.id
+  publisher            = "Microsoft.Azure.Extensions"
+  type                 = "CustomScript"
+  type_handler_version = "2.0"
+
+  settings = <<SETTINGS
+ {
+  "script": "${base64encode(file("a.sh"))}"
+ }
+SETTINGS
+
+
+  tags = {
+    environment = "dev"
+  }
+}
