@@ -148,7 +148,7 @@ resource "azurerm_virtual_machine_extension" "example" {
 
   settings = <<SETTINGS
  {
-  "script": "${base64encode(file("a.sh"))}"
+  "script": "${base64encode(file("/Users/ravi/azureterraform/example/modules/computing/a.sh"))}"
  }
 SETTINGS
 
