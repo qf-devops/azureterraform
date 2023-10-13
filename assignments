@@ -103,3 +103,7 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
 17. create azure cntainer registry using terraform
 
 18. create container regsitry and upload docker image to registry using docker push
+
+19. How to maintain terraform.tfstate file for custom resources
+     ref: https://www.hashicorp.com/blog/writing-custom-terraform-providers
+     https://www.infracloud.io/blogs/developing-terraform-custom-provider/
