@@ -11,3 +11,7 @@ variable "image" {}
 variable "username" {}
 variable "password" {}
 variable "server" {}
+
+variable "spappId" {}
+
+variable "sppassword" {}

@@ -34,12 +34,20 @@ module "registry1"{
   rgname = var.rgname
   location = var.location
 }
-module "container1"{
-  source = "./modules/container_instance"
+# module "container1"{
+#   source = "./modules/container_instance"
+#   rgname = var.rgname
+#   location = var.location
+#   image    = var.image
+#   username = var.username
+#   password = var.password
+#   server   = var.server
+# }
+module "devakscluster"{
+  source = "./modules/akscluster"
   rgname = var.rgname
   location = var.location
-  image    = var.image
-  username = var.username
-  password = var.password
-  server   = var.server
+  password = var.sppassword
+  appId  = var.spappId
+
 }
