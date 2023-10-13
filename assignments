@@ -101,3 +101,5 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
      https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service_connection
 
 17. create azure cntainer registry using terraform
+
+18. create container regsitry and upload docker image to registry using docker push
