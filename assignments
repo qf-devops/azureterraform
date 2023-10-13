@@ -128,3 +128,10 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
   592  kubectl apply -f nginx.yml 
   593  kubectl get -f nginx.yml 
   594  history
+
+21. use k8s provider top deploy pod and service.
+     deploy  
+     service 
+     ingress
+    configmap
+     secret
