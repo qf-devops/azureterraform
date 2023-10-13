@@ -34,3 +34,8 @@ module "registry1"{
   rgname = var.rgname
   location = var.location
 }
+module "container1"{
+  source = "./modules/container_instance"
+  rgname = var.rgname
+  location = var.location
+}
