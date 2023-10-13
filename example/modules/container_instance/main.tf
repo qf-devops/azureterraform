@@ -16,6 +16,11 @@ resource "azurerm_container_group" "container" {
   ip_address_type     = "Public"
   os_type             = "Linux"
   restart_policy      = var.restart_policy
+  image_registry_credential {
+    username = var.username
+    password = var.password
+    server   = var.server
+  }
 
   container {
     name   = "${var.container_name_prefix}-${random_string.container_name.result}"

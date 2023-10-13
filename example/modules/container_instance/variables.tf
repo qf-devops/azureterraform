@@ -5,6 +5,11 @@ variable "rgname"{
 variable "location"{
     type = string
 }
+variable "resource_group_name_prefix" {
+  type        = string
+  default     = "rg"
+  description = "Prefix of the resource group name that's combined with a random value so name is unique in your Azure subscription."
+}
 variable "container_group_name_prefix" {
   type        = string
   description = "Prefix of the container group name that's combined with a random value so name is unique in your Azure subscription."
@@ -49,4 +54,14 @@ variable "restart_policy" {
     condition     = contains(["Always", "Never", "OnFailure"], var.restart_policy)
     error_message = "The restart_policy must be one of the following: Always, Never, OnFailure."
   }
+}
+
+variable "username" {
+    type        = string
+}
+variable "password" {
+    type        = string
+}
+variable "server" {
+    type        = string
 }

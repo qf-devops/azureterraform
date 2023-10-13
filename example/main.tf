@@ -38,4 +38,8 @@ module "container1"{
   source = "./modules/container_instance"
   rgname = var.rgname
   location = var.location
+  image    = var.image
+  username = var.username
+  password = var.password
+  server   = var.server
 }

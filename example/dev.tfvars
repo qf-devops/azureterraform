@@ -46,3 +46,7 @@ fileshare_list = {
                  }
 }
 registrylist = ["devabcdcoreregistry"]
+image = "devabcdcoreregistry.azurecr.io/nginx:1.0"
+username = "devabcdcoreregistry"
+password = "ximbWSABRLuNiFSjaTJUdC3VvjOv15iC8V+AF/z/hU+ACRCENqMJ"
+server   = "devabcdcoreregistry.azurecr.io"

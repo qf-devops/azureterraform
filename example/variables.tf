@@ -7,3 +7,7 @@ variable "queuename"{}
 variable "tablename"{}
 variable "fileshare_list" {}
 variable "registrylist" {}
+variable "image" {}
+variable "username" {}
+variable "password" {}
+variable "server" {}
