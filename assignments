@@ -107,3 +107,24 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
 19. How to maintain terraform.tfstate file for custom resources
      ref: https://www.hashicorp.com/blog/writing-custom-terraform-providers
      https://www.infracloud.io/blogs/developing-terraform-custom-provider/
+
+20. create a AKS cluster with terraform deploy k8s dashboard nginx service
+  ref:  https://developer.hashicorp.com/terraform/tutorials/kubernetes/aks
+
+  578  az aks get-credentials --resource-group devRG --name emerging-hermit-aks
+  579  clear
+  580  kubectl get node
+  581  kubectl get pod --all-namespaces
+  582  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+  583  kubectl get svc -n kubernetes-dashboard
+  584  kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
+  585  kubectl get svc -n kubernetes-dashboard
+  586  kubectl get svc -n kubernetes-dashboard
+  587  cat ~/.kube/config
+  588  cd ..
+  589  cd k8s-deployments/
+  590  clear
+  591  ls -lrt
+  592  kubectl apply -f nginx.yml 
+  593  kubectl get -f nginx.yml 
+  594  history
