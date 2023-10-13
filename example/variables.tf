@@ -6,3 +6,4 @@ variable "container_list" {}
 variable "queuename"{}
 variable "tablename"{}
 variable "fileshare_list" {}
+variable "registrylist" {}

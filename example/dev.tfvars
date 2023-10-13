@@ -45,3 +45,4 @@ fileshare_list = {
                     "quota" = "40"
                  }
 }
+registrylist = ["devabcdcoreregistry"]
