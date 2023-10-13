@@ -1,3 +1,10 @@
+variable "rgname"{
+    type = string
+}
+
+variable "location"{
+    type = string
+}
 variable "container_group_name_prefix" {
   type        = string
   description = "Prefix of the container group name that's combined with a random value so name is unique in your Azure subscription."
