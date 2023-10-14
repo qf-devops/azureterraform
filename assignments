@@ -135,3 +135,5 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
      ingress
     configmap
      secret
+
+23. how to multiple provider s at a time in terraform
