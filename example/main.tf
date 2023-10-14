@@ -33,6 +33,7 @@ module "registry1"{
   registrylist = var.registrylist
   rgname = var.rgname
   location = var.location
+  depends_on=[azurerm_resource_group.rg]
 }
 # module "container1"{
 #   source = "./modules/container_instance"
@@ -49,5 +50,6 @@ module "devakscluster"{
   location = var.location
   password = var.sppassword
   appId  = var.spappId
+  depends_on=[azurerm_resource_group.rg]
 
 }
