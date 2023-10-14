@@ -137,3 +137,5 @@ https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
      secret
 
 23. how to multiple provider s at a time in terraform
+
+24. Deploy jenkins helm package using terraform.
