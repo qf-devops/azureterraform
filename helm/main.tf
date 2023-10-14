@@ -25,3 +25,9 @@ resource "helm_release" "example_helm_release" {
     value = "ClusterIP"
   }
 }
+
+resource "kubernetes_namespace" "certificate_manager" {
+  metadata {
+    name = "certificate-manager"
+  }
+}

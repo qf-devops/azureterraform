@@ -15,3 +15,9 @@ variable "server" {}
 variable "spappId" {}
 
 variable "sppassword" {}
+
+
+variable "cosmos_account_name" {}
+variable "cosmos_api" {}
+variable "cassandra_keyspaces" {}
+variable "cassandra_tables" {}
